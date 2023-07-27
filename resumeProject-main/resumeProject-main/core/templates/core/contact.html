@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container">
+    <h1 class="text-warning mt-5 border-bottom">CONTACT ME</h1>
+    <div class="myform mt-5 text-white">
+        <form>
+            <div class="row h-100">
+                <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Enter your name*</label>
+                    <input type="text" class="form-control " data-toggle="tooltip" data-placement="top"
+                        title="Please enter your full name">
+                </div>
+                <div class="col-sm-6">
+                    <label for="formGroupExampleInput">Email*</label>
+                    <input type="text" class="form-control data-toggle=" tooltip" data-placement="top"
+                        title="Please enter your correct email"" >
+        </div>
+      </div>
+<div class=" col mt-3">
+                    <label for="comment">Enter your message:</label>
+                    <textarea class="form-control" rows="3" id="comment"></textarea>
+                </div>
+                <div class="custom-file mt-3">
+                    <input type="file" class="custom-file-input" id="customFile" data-toggle="tooltip"
+                        data-placement="top" title="Upload file if any">
+
+                </div>
+                <button type="submit" class="btn btn-warning mt-4 px-4">Send</button>
+
+        </form>
+        <div class="socialmedia text-center mt-5">
+            <a href="https://www.facebbok.com" class="mx-4"> <i class="fab fa-facebook fa-2x mt-3 i-color "></i></a>
+            <a href="https://www.tweeter.com" class="mx-4"> <i class="fab fa-twitter fa-2x mt-3 i-color "></i></a>
+            <a href="https://www.instagram.com" class="mx-4"> <i class="fab fa-instagram fa-2x mt-3 i-color "></i></a>
+            <a href="https://www.telegram.com" class="mx-4"> <i class="fab fa-telegram fa-2x mt-3 i-color "></i></a>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}

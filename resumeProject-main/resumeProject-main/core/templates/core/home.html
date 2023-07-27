@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="text-center mt-3">
+<img src="{% static 'core/images/rrr.png.jpeg' %}" height="250px" width="150px" alt="ProfilePic" class="img-thumbnail">
+</div>
+<div class="text-white mt-3 mx-3 text-justify" style="line-height:2rem;">
+    <h1  class="font-weight-bold st-font">Hello,</h1>
+    <div>
+    <p  style="text-indent:100px;"> I am <b class="text-warning">Rajat Kumar Saran</b> having 1.6 yrs of experience as a python developer,
+        I offer the technical expertise you are seeking for your web developer position
+    </p>
+<p>
+ Since earining my Polytechnic in automobile engineering from Oxford school of polytechnic, I have served as a web development
+ at <b class="text-warning">Brickred systems</b>, one of the biggest I.T consulting and web developmentprojects for clients
+ in diverse industries including technology, manufacturing, pharmaceutical, retail, hospitality, and finacial services.   
+</p>
+<p>
+    
+
+</p>
+
+    </div>
+</div>
+
+<div class="text-center">
+<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-5">Hire Me</a>
+<a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Conatct</a>
+</div>
+
+
+{% endblock content %}
